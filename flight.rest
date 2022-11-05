@@ -1,0 +1,39 @@
+@url = "http://localhost:3000/"
+
+// get all flights
+###
+GET http://localhost:3000/flight HTTP/1.1
+
+// get a single flight
+###
+GET http://localhost:300/flight/1 HTTP/1.1
+
+//  add a flight
+###
+POST http://localhost:3000/flight HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": "1",
+    "title": "flight to canada",
+    "time": "1pm",
+    "price": "26000",
+    "date": "26-06-2022"
+}
+
+// update a flight
+###
+PUT http://localhost:3000/flight/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": "1",
+    "title": "flight to canada",
+    "time": "1pm",
+    "price": "26000",
+    "date": "26-06-2022"
+}
+
+// delete a flight
+###
+DELETE http://localhost:3000/flight/1 HTTP/1.1
